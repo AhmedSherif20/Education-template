@@ -1,0 +1,734 @@
+/* ------------------------- loading screen  ------------------------- */
+body {
+  overflow: hidden;
+}
+
+#loading {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999999999999999;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#loading .sk-cube-grid {
+  width: 75px;
+  height: 75px;
+  margin-bottom: 100px;
+}
+
+#loading .sk-cube-grid .sk-cube {
+  width: 33%;
+  height: 33%;
+  background-color: #2d3092;
+  float: left;
+  animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+}
+
+#loading .sk-cube-grid .sk-cube1 {
+  animation-delay: 0.2s;
+}
+
+#loading .sk-cube-grid .sk-cube2 {
+  animation-delay: 0.3s;
+}
+
+#loading .sk-cube-grid .sk-cube3 {
+  animation-delay: 0.4s;
+}
+
+#loading .sk-cube-grid .sk-cube4 {
+  animation-delay: 0.1s;
+}
+
+#loading .sk-cube-grid .sk-cube5 {
+  animation-delay: 0.2s;
+}
+
+#loading .sk-cube-grid .sk-cube6 {
+  animation-delay: 0.3s;
+}
+
+#loading .sk-cube-grid .sk-cube7 {
+  animation-delay: 0s;
+}
+
+#loading .sk-cube-grid .sk-cube8 {
+  animation-delay: 0.1s;
+}
+
+#loading .sk-cube-grid .sk-cube9 {
+  animation-delay: 0.2s;
+}
+
+@keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    transform: scale3D(1, 1, 1);
+  }
+  35% {
+    transform: scale3D(0, 0, 1);
+  }
+}
+
+/* ------------------------- loading screen  ------------------------- */
+/* ------------------------- Main style of every section titles ------------------------- */
+.section {
+  margin-bottom: 100px;
+}
+
+/* ------------------------- Main style of every section titles ------------------------- */
+/* ------------------------- Main titles of every section titles ------------------------- */
+.section-titles {
+  margin-bottom: 48px;
+  padding-top: 30px;
+}
+
+.section-span {
+  color: #3ba0ff;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.section-title {
+  color: #030431;
+  font-size: 50px;
+  font-weight: 600;
+  font-family: "Sen", sans-serif;
+  margin: 16px 0 25px;
+  line-height: 1.3;
+}
+
+/* ------------------------- Main titles of every section titles ------------------------- */
+/* ------------------------- HTML Scroll behavior ------------------------- */
+html, body {
+  scroll-behavior: smooth;
+}
+
+/* ------------------------- HTML Scorll behavior ------------------------- */
+/* ------------------------- Main Bottons for every seciton -------------------------*/
+.main-btn {
+  width: 175px;
+  height: 60px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  background-color: #2d3092;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  transition: 0.2s ease-out;
+  box-shadow: inset 0 0 0 0 #007bff;
+}
+
+.main-btn:hover {
+  color: white;
+  text-decoration: none;
+  box-shadow: inset 175px 0 0 0 #007bff;
+  cursor: pointer;
+}
+
+/* ------------------------- Main Bottons for every seciton -------------------------*/
+/* ------------------------- scroll to top Button -------------------------*/
+#scrollTopBtn {
+  width: 60px;
+  height: 60px;
+  background-color: #2d3092;
+  color: white;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  border-radius: 50%;
+  position: fixed;
+  right: 3%;
+  bottom: 5%;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+#scrollTopBtn:hover {
+  transition: 0.2s;
+  opacity: 1;
+}
+
+/* ------------------------- scroll to top Button -------------------------*/
+#topBar {
+  position: relative;
+  background-color: white;
+}
+
+.social-media {
+  background-color: #2d3092;
+  left: 0;
+  top: 0%;
+  width: 20%;
+  height: 100%;
+}
+
+.topBar-left p {
+  color: #86878a;
+  font-size: 16px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.topBar-right a {
+  font-size: 16px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  color: #86878a;
+  text-decoration: none;
+  transition: 0.25s;
+}
+
+.topBar-right a:hover {
+  color: #4044b4;
+}
+
+.topBar-right a i {
+  color: #4044b4;
+  margin-right: 3px;
+}
+
+.social-media i {
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+.social-media i:hover {
+  transform: rotateY(180deg);
+}
+
+@media screen and (max-width: 1850px) {
+  #topBar .container .social-media {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #topBar {
+    display: none !important;
+  }
+}
+
+#navBar {
+  transition: 0.1s !important;
+}
+
+#navBarScroll {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99999999;
+  transition: 0.3s !important;
+}
+
+.navbar-brand img {
+  width: 100%;
+  position: relative;
+  left: 50%;
+}
+
+.navbar-toggler-icon {
+  color: #2d3092;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.navbar-collapse ul {
+  margin-right: 100px;
+}
+
+.nav-item {
+  margin-right: 48px;
+}
+
+.nav-link {
+  font-size: 18px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  color: #091a23 !important;
+}
+
+.nav-link:hover {
+  color: #2d3092 !important;
+}
+
+.active a {
+  color: #2d3092 !important;
+}
+
+.form-search {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #2d3092;
+  left: 90%;
+  cursor: pointer;
+}
+
+.form-inline .form-control {
+  box-shadow: 0 0 0 0.2rem #2d3092;
+}
+
+@media screen and (max-width: 1850px) {
+  .navbar-brand img {
+    left: 25%;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .navbar-brand img {
+    left: 0%;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .navbar {
+    padding: 20px !important;
+  }
+}
+
+/* navbar style while scroll */
+/* ------------------------- loading screen  ------------------------- */
+body {
+  overflow: hidden;
+}
+
+#loading {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999999999999999;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#loading .sk-cube-grid {
+  width: 75px;
+  height: 75px;
+  margin-bottom: 100px;
+}
+
+#loading .sk-cube-grid .sk-cube {
+  width: 33%;
+  height: 33%;
+  background-color: #2d3092;
+  float: left;
+  animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+}
+
+#loading .sk-cube-grid .sk-cube1 {
+  animation-delay: 0.2s;
+}
+
+#loading .sk-cube-grid .sk-cube2 {
+  animation-delay: 0.3s;
+}
+
+#loading .sk-cube-grid .sk-cube3 {
+  animation-delay: 0.4s;
+}
+
+#loading .sk-cube-grid .sk-cube4 {
+  animation-delay: 0.1s;
+}
+
+#loading .sk-cube-grid .sk-cube5 {
+  animation-delay: 0.2s;
+}
+
+#loading .sk-cube-grid .sk-cube6 {
+  animation-delay: 0.3s;
+}
+
+#loading .sk-cube-grid .sk-cube7 {
+  animation-delay: 0s;
+}
+
+#loading .sk-cube-grid .sk-cube8 {
+  animation-delay: 0.1s;
+}
+
+#loading .sk-cube-grid .sk-cube9 {
+  animation-delay: 0.2s;
+}
+
+@keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    transform: scale3D(1, 1, 1);
+  }
+  35% {
+    transform: scale3D(0, 0, 1);
+  }
+}
+
+/* ------------------------- loading screen  ------------------------- */
+/* ------------------------- Main style of every section titles ------------------------- */
+.section {
+  margin-bottom: 100px;
+}
+
+/* ------------------------- Main style of every section titles ------------------------- */
+/* ------------------------- Main titles of every section titles ------------------------- */
+.section-titles {
+  margin-bottom: 48px;
+  padding-top: 30px;
+}
+
+.section-span {
+  color: #3ba0ff;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.section-title {
+  color: #030431;
+  font-size: 50px;
+  font-weight: 600;
+  font-family: "Sen", sans-serif;
+  margin: 16px 0 25px;
+  line-height: 1.3;
+}
+
+/* ------------------------- Main titles of every section titles ------------------------- */
+/* ------------------------- HTML Scroll behavior ------------------------- */
+html, body {
+  scroll-behavior: smooth;
+}
+
+/* ------------------------- HTML Scorll behavior ------------------------- */
+/* ------------------------- Main Bottons for every seciton -------------------------*/
+.main-btn {
+  width: 175px;
+  height: 60px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  background-color: #2d3092;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  transition: 0.2s ease-out;
+  box-shadow: inset 0 0 0 0 #007bff;
+}
+
+.main-btn:hover {
+  color: white;
+  text-decoration: none;
+  box-shadow: inset 175px 0 0 0 #007bff;
+  cursor: pointer;
+}
+
+/* ------------------------- Main Bottons for every seciton -------------------------*/
+/* ------------------------- scroll to top Button -------------------------*/
+#scrollTopBtn {
+  width: 60px;
+  height: 60px;
+  background-color: #2d3092;
+  color: white;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  border-radius: 50%;
+  position: fixed;
+  right: 3%;
+  bottom: 5%;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+#scrollTopBtn:hover {
+  transition: 0.2s;
+  opacity: 1;
+}
+
+/* ------------------------- scroll to top Button -------------------------*/
+header {
+  background-image: url(../images/xhero2.png);
+  background-size: 100% 100%;
+  background-position: center center;
+  margin-bottom: 50px;
+  text-align: center;
+  min-height: 460px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  color: white;
+  font-size: 60px;
+  font-weight: 700 !important;
+  font-family: "Sen", sans-serif;
+}
+
+/* ------------------------- start footer -------------------------*/
+footer {
+  background-color: #0B0B1D;
+  padding-top: 48px;
+}
+
+footer .footer-up {
+  padding-top: 50px;
+}
+
+footer .footer-up h4 {
+  color: white;
+  font-size: 26px;
+  font-family: "Sen", sans-serif;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+footer .footer-up .footer-update {
+  margin-bottom: 48px;
+}
+
+footer .footer-up .footer-update .input-group .form-control {
+  background: #fff;
+  color: #000;
+  height: 60px;
+}
+
+footer .footer-up .footer-update .input-group .input-group-append .footer-btn {
+  width: 150px;
+}
+
+footer .footer-up .footer-media .media-icon {
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .footer-up .footer-media .media-icon a {
+  color: white;
+  text-decoration: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 30%;
+  background-color: teal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  position: relative;
+  overflow: hidden;
+}
+
+footer .footer-up .footer-media .media-icon a:hover {
+  font-size: 28px;
+  transition: 0.3s;
+}
+
+footer .footer-up .footer-media .media-icon a:hover::before {
+  top: -10px;
+  left: -10px;
+}
+
+footer .footer-up .footer-media .media-icon a::before {
+  content: "";
+  position: absolute;
+  width: 130%;
+  height: 130%;
+  background: #3498db;
+  transform: rotate(45deg);
+  left: -110%;
+  top: 90%;
+  transition: 0.35s;
+}
+
+footer .footer-up .footer-media .media-icon a i {
+  z-index: 99;
+}
+
+footer .footer-up .footer-media .media-icon .facebook-icon {
+  background-color: #3b5998;
+}
+
+footer .footer-up .footer-media .media-icon .twitter-icon {
+  background-color: #1DA1F2;
+}
+
+footer .footer-up .footer-media .media-icon .instagram-icon {
+  background-image: linear-gradient(45deg, #4c68d7, #8a3ab9);
+}
+
+footer .footer-up .footer-media .media-icon .youtube-icon {
+  background-color: #FF0000;
+}
+
+footer .footer-up .footer-media .media-icon .google-icon {
+  background-color: #F4B400;
+}
+
+footer .footer-down {
+  margin-bottom: 48px;
+}
+
+footer .footer-down .footer-links {
+  margin-bottom: 48px;
+}
+
+footer .footer-down .footer-links h4 {
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Sen", sans-serif;
+  margin-bottom: 38px;
+}
+
+footer .footer-down .footer-links ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+footer .footer-down .footer-links ul li {
+  width: fit-content;
+  margin-bottom: 15px;
+}
+
+footer .footer-down .footer-links ul li a {
+  color: #868c98;
+  text-decoration: none;
+}
+
+footer .footer-down .footer-links ul li a:hover {
+  color: white;
+  transition: 0.2s;
+}
+
+footer .footer-down .footer-links ul li:hover {
+  transform: translateX(10px);
+  transition: 0.4s;
+}
+
+footer .footer-copyright {
+  border-top: 1px solid #2f344f;
+}
+
+footer .footer-copyright p {
+  padding: 50px 0 40px;
+  margin-bottom: 0;
+  text-align: center;
+  color: #9fa8c3;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: "Courier New", "Sen", sans-serif;
+}
+
+footer .footer-copyright p a {
+  text-decoration: none;
+}
+
+footer .footer-copyright p a:hover {
+  color: white;
+  transition: 0.2s;
+}
+
+@media screen and (max-width: 768px) {
+  footer .footer-copyright p {
+    width: 97%;
+    margin: auto;
+  }
+}
+
+/* ------------------------- end footer -------------------------*/
+/* ------------------------- contact section  ------------------------- */
+#contact {
+  padding: 50px 0;
+}
+
+#contact .map .gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 500px;
+  width: 1100px;
+}
+
+#contact .map .mapouter {
+  position: relative;
+  text-align: right;
+  height: 500px;
+  width: 1100px;
+}
+
+#contact .contact-form h2 {
+  color: #030431;
+  font-weight: 700;
+  font-family: "Sen", sans-serif;
+  margin-bottom: 24px;
+}
+
+#contact .contact-form .form-group textarea {
+  margin-bottom: 30px;
+}
+
+#contact .contact-form .form-group .inputs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#contact .contact-form .form-group .inputs input {
+  width: 48.5%;
+  margin-bottom: 20px;
+}
+
+#contact .contact-informations .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+#contact .contact-informations .info .info-icon {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact .contact-informations .info .info-icon i {
+  color: #8f9195;
+  font-size: 45px;
+}
+
+#contact .contact-informations .info .info-text {
+  width: 78%;
+}
+
+#contact .contact-informations .info .info-text p {
+  color: #2a2a2a;
+  margin-bottom: 0 !important;
+  font-family: "Sen", sans-serif;
+  font-size: 18px;
+}
+
+#contact .contact-informations .info .info-text span {
+  color: #8a8a8a;
+  font-family: "Roboto", sans-serif;
+}
+
+/* ------------------------- contact section  ------------------------- */
+/*# sourceMappingURL=contact-style.css.map */

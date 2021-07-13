@@ -1,0 +1,103 @@
+@import "variables";
+@import "shared";
+@import "topBar";
+@import "navBar";
+@import "header_branches";
+@import "footer";
+/* ------------------------- contact section  ------------------------- */
+#contact
+{
+    padding: 50px 0;
+    .map
+    {
+         // map style
+        .gmap_canvas
+        {
+            overflow:hidden;
+            background:none!important;
+            height:500px;
+            width:1100px;
+        }
+        .mapouter
+        {
+            position:relative;
+            text-align:right;
+            height:500px;
+            width:1100px;
+        }
+    }
+    .contact-form
+    {
+        h2
+        {
+            color: #030431;
+            font: {
+                weight: 700;
+                family: $fontSen;
+            }
+            margin-bottom: 24px;
+        }
+        .form-group
+        {
+            textarea
+            {
+                margin-bottom: 30px;
+            }
+            .inputs
+            {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                
+                input
+                {
+                    width: 48.5%;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+    .contact-informations
+    {
+        .info
+        {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 24px;
+            .info-icon
+            {
+                height: 100%;
+                width: 20%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                i
+                {
+                    color: #8f9195;
+                    font-size: 45px;
+                }
+            }
+            .info-text
+            {
+                width: 78%;
+                p
+                {
+                    color: #2a2a2a;
+                    margin-bottom: 0 !important;
+                    font: {
+                        family: $fontSen;
+                        size: 18px;
+                    }
+                }
+                span
+                {
+                    color: #8a8a8a;
+                    font-family: $fontRoboto;
+                }
+            }
+        }
+    }
+}
+/* ------------------------- contact section  ------------------------- */

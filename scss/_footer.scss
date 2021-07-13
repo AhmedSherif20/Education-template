@@ -1,0 +1,194 @@
+/* ------------------------- start footer -------------------------*/
+footer
+{
+    background-color: #0B0B1D;
+    padding-top: 48px;
+    .footer-up
+    {
+        padding-top: 50px;
+        h4
+        {
+            color: white;
+            font: {
+                size: 26px;
+                family: $fontSen;
+                weight: 500;
+            };
+            margin-bottom: 40px;
+        }
+        .footer-update
+        {
+            margin-bottom: 48px;
+            .input-group
+            {
+                .form-control
+                {
+                    background: #fff;
+                    color: #000;
+                    height: 60px;
+                    
+                }
+                .input-group-append
+                {
+                    .footer-btn
+                    {
+                        width: 150px;
+                    }
+                }
+            }
+        }
+        .footer-media
+        {
+            .media-icon
+            {
+                height: 60px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                a
+                {
+                    color: white;
+                    text-decoration: none;
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 30%;
+                    background-color: teal;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 22px;
+                    position: relative;
+                    overflow: hidden;
+                    &:hover
+                    {
+                        font-size: 28px;
+                        transition: 0.3s;
+                        &::before
+                        {
+                            top: -10px;
+                            left: -10px;
+                        }
+                    }
+                    &::before
+                    {
+                        content: "";
+                        position: absolute;
+                        width: 130%;
+                        height: 130%;
+                        background: #3498db;
+                        transform: rotate(45deg);
+                        left: -110%;
+                        top: 90%;
+                        transition: 0.35s;
+                    }
+                    i
+                    {
+                        z-index: 99;
+                    }
+                }
+                .facebook-icon
+                {
+                    background-color: #3b5998;
+                }
+                .twitter-icon
+                {
+                    background-color:  #1DA1F2;
+                }
+                .instagram-icon
+                {
+                    background-image: linear-gradient( 45deg, #4c68d7 ,  #8a3ab9);
+                }
+                .youtube-icon
+                {
+                    background-color:  #FF0000;
+                }
+                .google-icon
+                {
+                    background-color:  #F4B400;
+                }
+            }
+        }
+    }
+    .footer-down
+    {
+        margin-bottom: 48px;
+        .footer-links
+        {
+            margin-bottom: 48px;
+            h4
+            {
+                color: white;
+                font: {
+                    size: 18px;
+                    weight: 500;
+                    family: $fontSen;
+                };
+                margin-bottom: 38px;
+            }
+            ul
+            {
+                list-style: none;
+                padding-left: 0px;
+                li
+                {
+                    width: fit-content;
+                    margin-bottom: 15px;
+                    a
+                    {
+                        color: #868c98;
+                        text-decoration: none;
+                        &:hover
+                        {
+                            color: white;
+                            transition: 0.2s;
+                        }
+                    }
+                    &:hover
+                    {
+                        transform: translateX(10px);
+                        transition: 0.4s;
+                    }
+                }
+            }
+        }
+    }
+    .footer-copyright
+    {
+        border-top: 1px solid #2f344f;
+        p
+        {
+            padding: 50px 0 40px;
+            margin-bottom: 0;
+            text-align: center;
+            color: #9fa8c3;
+            font: {
+                size: 16px;
+                weight: 300;
+                family: "Courier New", $fontSen;
+            };
+            a
+            {
+                text-decoration: none;
+                &:hover
+                {
+                    color: white;
+                    transition: 0.2s;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    footer
+    {
+        .footer-copyright
+        {
+            p
+            {
+                width: 97%;
+                margin: auto;
+            }
+        }
+    }
+}
+/* ------------------------- end footer -------------------------*/

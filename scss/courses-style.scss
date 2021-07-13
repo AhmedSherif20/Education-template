@@ -1,0 +1,145 @@
+@import "variables";
+@import "shared";
+@import "topBar";
+@import "navBar";
+@import "header_branches";
+@import "footer";
+/* ------------------------- start courses section -------------------------*/
+#courses
+{
+    .courses-links
+    {
+        padding: 20px 0;
+        border-bottom: 1px solid #dee2e6;
+        margin-bottom: 50px;
+        span
+        {
+            cursor: pointer;
+            color: #635c5c;
+            text-decoration: none;
+            font: {
+                size: 18px;
+                weight: 600;
+                family: $fontJose
+            }
+            margin-right: 30px;
+            &:hover
+            {
+                transition: 0.3s;
+                color: #051441;
+            }
+
+        }
+    }
+    .courses-type
+    {
+        #web,#graphic,#marketing
+        {
+            display: none;
+        }
+    }
+    .course
+    {
+        margin-bottom: 48px;
+        border: 1px solid #DDD;
+        .course-img
+        {
+            overflow: hidden;
+            img
+            {
+                max-height: 100%;
+                max-width: 100%;
+                transform: scale(1.05);
+                transition: 0.4s;
+
+                &:hover
+                {
+                    transform: scale(1);
+                }
+            }
+        }
+
+        .course-title
+        {
+            width: 85%;
+            margin: 0 auto;
+            h4
+            {
+                padding: 37px 0 0 0 ;
+                
+                a
+                {
+                    color: #250051;
+                    text-decoration: none;
+                    font: {
+                        size: 30px;
+                        weight: 500;
+                        family: $fontSen;
+                    };
+
+                    &:hover
+                    {
+                        color: $mainColor;
+                    }
+                }
+            }
+            .course-states
+            {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 0;
+                margin: 15px 0;
+                .stars
+                {
+                    width: 50%;
+                    span i
+                    {
+                        color: #fbba42;
+                        font-size: 12px;
+                    }
+                }
+                .review
+                {
+                    text-align: right;
+                    width: 33.3333%;
+                    color: #b2b2b2;
+                    font: {
+                        size: 14px;
+                        weight: 400;
+                        family: $fontRoboto;
+                    };
+                }
+            }
+            .information
+            {
+                @extend .course-states;
+
+                .likes
+                {
+                    span
+                    {
+                        margin-right: 10px;
+                        i
+                        {
+                            margin-right: 1px;
+                        }
+                    }
+
+                }
+
+                .price
+                {
+                    @extend .review;
+                }        
+            }
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .course-img img
+    {
+        width: 100%;
+    }
+}
+/* ------------------------- end courses section -------------------------*/

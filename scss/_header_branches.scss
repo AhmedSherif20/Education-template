@@ -1,0 +1,27 @@
+@import "variables";
+@import "shared";
+
+
+header
+{
+    background: {
+        image: url(../images/xhero2.png);
+        size: 100% 100%;
+        position: center center;
+    }
+    margin-bottom: 50px;
+    text-align: center;
+    min-height: 460px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1
+    {
+         color: white;
+        font: {
+            size: 60px;
+            weight: 700 !important ;
+            family: $fontSen;
+        };
+    }
+}

@@ -1,0 +1,197 @@
+@import "variables";
+@import "shared";
+@import "topBar";
+@import "navBar";
+@import "header_branches";
+@import "footer";
+
+/* ------------------------- start info section -------------------------*/
+#info
+{
+    padding: 50px 0;
+    article
+    {
+        width: 70%;
+        margin: 30px auto;
+
+        h4
+        {
+            font: {
+                size: 30px;
+                weight: 700;
+                family: $fontSen;
+            }
+            margin-bottom: 30px ;
+            color: #000a2d;
+        }
+        p
+        {
+            color: #464d65;
+            line-height: 30px;
+            margin-bottom: 15px;
+            font: {
+                size: 17px;
+                family: $fontRoboto;
+            }
+        }
+    }
+}
+/* ------------------------- end info section -------------------------*/
+
+/* ------------------------- start Topics section -------------------------*/
+#topics
+{
+    background: {
+        image: url(../images/section_bg01.png);
+        size: 100% 100%;
+        position: center center;
+    }
+    padding: 48px 0;
+    .topic
+    {
+        margin-bottom: 15px;
+        padding: 10px 20px;
+        .topic-img
+        {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        .topic-title
+        {
+            font: {
+                size: 24px;
+                weight: 600;
+                family: $fontSen;
+            };
+            margin: 10px auto;
+            text-transform: capitalize;
+        }
+        .topic-one
+        {
+            color: #1e9d78;
+        }
+        .topic-two
+        {
+            color: #f05510;
+        }
+        .topic-three
+        {
+            color: #1e9d78;
+        }
+        .topic-four
+        {
+            color: $mainColor;
+        }
+    }
+}
+/* ------------------------- end Topics section -------------------------*/
+
+
+/* ------------------------- start testimonials section -------------------------*/
+#testimonials
+{
+    background: {
+        image: url(../images/section_bg03.png);
+        size: cover;
+        position: center center;
+    }
+    .testimonial-title
+    {
+        margin-bottom: 0;
+    }
+    .single-testimonial
+    {
+
+        .slick-prev 
+        {
+            left: 100px !important;
+            z-index: 10 !important;
+            opacity: 0.1;
+        }
+        .slick-next {
+            right: 100px !important;
+            z-index: 10 !important;
+            opacity: 0.1;
+        }
+
+
+        .testimonial
+        {
+            cursor: grab;
+            .test-caption
+            {
+                color: white;
+                font: {
+                    size: 23px;
+                    family: $fontRoboto;
+                };
+            }
+            
+        }
+        &:hover
+            {
+                .slick-prev , .slick-next 
+                {
+                    opacity: 1;
+                    transition: 0.3s linear;
+                }
+                .slick-prev
+                {
+                    left: 110px !important;
+                }
+                .slick-next
+                {
+                    right: 110px !important;
+                }
+            }
+        
+    }
+}
+@media screen and (max-width: 767px) {
+    .slick-arrow
+    {
+        display: none !important;
+    }
+    .test-caption 
+    {
+        width: 75% !important;
+    }
+}
+/* ------------------------- end testimonials section -------------------------*/
+
+/* ------------------------- start aboutus section -------------------------*/
+#aboutus
+{
+    p
+    {
+        color: rgb(100, 103, 108);
+        font: {
+            size: 16px;
+            family: $fontRoboto;
+        };
+    }
+    .features
+    {
+        margin-bottom: 20px;
+        p
+        {
+            color: black;
+           font-family: $fontRoboto; 
+
+           i
+           {
+               color: $mainColor;
+               font-size: 30px;
+               margin-right: 14px;
+           }
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .aboutus-display
+    {
+        display: none !important;
+    }
+}
+/* ------------------------- end aboutus section -------------------------*/
+

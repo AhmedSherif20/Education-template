@@ -1,0 +1,567 @@
+@import "variables";
+@import "shared";
+@import "topBar";
+@import "navBar";
+@import "footer";
+/* ------------------------- start header -------------------------*/
+header
+{
+    background: {
+        image: url(../images/xh1_hero.png);
+        size: cover;
+        position: center center;
+    }
+    overflow: hidden;
+    margin-bottom: 100px;
+    .header-title
+    {
+        font: {
+            size: 65px;
+            weight: 700 !important;
+            family: $fontSen;
+        };
+        color: #030431;
+        line-height: 1.3;
+    }
+    .header-span
+    {
+        font: {
+            size: 16px;
+            weight: 500;
+            family: $fontRoboto;
+        }
+        color: $mainColor;
+    }
+    @media screen and (max-width: 1650px) {
+        .header-img
+        {
+           width: 100%;
+        }
+    }
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+        
+        .header-img
+        {
+            width: 200%;
+        }
+    }
+}
+/* ------------------------- end header -------------------------*/
+
+
+/* ------------------------- start categories section -------------------------*/
+.category
+{
+    padding: 45px 40px;
+    border: 1px solid #ddd;
+    transition: 0.4s;
+    border-radius: 4px;
+    margin-bottom: 25px;
+    .cat-icon
+    {
+        color: $mainColor;
+        font-size: 45px;
+        margin: 0 0 15px;
+        transition: 0.4s;
+    }
+    .cat-title
+    {
+        color: #250051;
+        margin: 18px 0 18px;
+        font: {
+            size: 24px;
+            weight: 600;
+            family: $fontSen;
+        };
+        transition: 0.4s;
+    }
+    p
+    {
+        color: #57667e;
+        font: {
+            size: 16px;
+            weight: normal;
+            family: $fontSen;
+        };
+        line-height: 30px;
+        margin-bottom: 36px;
+        transition: 0.4s;
+    }
+    a
+    {
+        color: #57667e;
+        font: {
+            size: 16px;
+            weight: normal;
+            family: $fontSen;
+        };
+        transition: 0.4s;
+        text-decoration: none;
+        &:hover
+        {
+            text-decoration: none;
+        }
+        i
+        {
+            margin-left: 5px;
+        }
+    }
+    &:hover
+    {
+        background-color: $mainColor;
+        .cat-icon,.cat-title,p,a
+        {
+            color: white;
+        }
+    }
+}
+.categories-btn
+{
+    width: 220px !important;
+        &:hover
+        {
+            box-shadow: inset 220px 0 0 0 #007bff;
+        }
+}
+
+/* ------------------------- end categories section -------------------------*/
+
+/* ------------------------- start Topics section -------------------------*/
+#topics
+{
+    background: {
+        image: url(../images/section_bg01.png);
+        size: 100% 100%;
+        position: center center;
+    }
+    padding: 48px 0;
+    .topic
+    {
+        margin-bottom: 15px;
+        padding: 10px 20px;
+        .topic-img
+        {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        .topic-title
+        {
+            font: {
+                size: 24px;
+                weight: 600;
+                family: $fontSen;
+            };
+            margin: 10px auto;
+            text-transform: capitalize;
+        }
+        .topic-one
+        {
+            color: #1e9d78;
+        }
+        .topic-two
+        {
+            color: #f05510;
+        }
+        .topic-three
+        {
+            color: #1e9d78;
+        }
+        .topic-four
+        {
+            color: $mainColor;
+        }
+    }
+}
+/* ------------------------- end Topics section -------------------------*/
+
+/* ------------------------- start courses section -------------------------*/
+#courses
+{
+    .course
+    {
+        margin-bottom: 48px;
+        border: 1px solid #DDD;
+        .course-img
+        {
+            overflow: hidden;
+            img
+            {
+                max-height: 100%;
+                max-width: 100%;
+                transform: scale(1.05);
+                transition: 0.4s;
+
+                &:hover
+                {
+                    transform: scale(1);
+                }
+            }
+        }
+
+        .course-title
+        {
+            width: 85%;
+            margin: 0 auto;
+            h4
+            {
+                padding: 37px 0 0 0 ;
+                
+                a
+                {
+                    color: #250051;
+                    text-decoration: none;
+                    font: {
+                        size: 30px;
+                        weight: 500;
+                        family: $fontSen;
+                    };
+
+                    &:hover
+                    {
+                        color: $mainColor;
+                    }
+                }
+            }
+            .course-states
+            {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 0;
+                margin: 15px 0;
+                .stars
+                {
+                    width: 50%;
+                    span i
+                    {
+                        color: #fbba42;
+                        font-size: 12px;
+                    }
+                }
+                .review
+                {
+                    text-align: right;
+                    width: 33.3333%;
+                    color: #b2b2b2;
+                    font: {
+                        size: 14px;
+                        weight: 400;
+                        family: $fontRoboto;
+                    };
+                }
+            }
+            .information
+            {
+                @extend .course-states;
+
+                .likes
+                {
+                    span
+                    {
+                        margin-right: 10px;
+                        i
+                        {
+                            margin-right: 1px;
+                        }
+                    }
+
+                }
+
+                .price
+                {
+                    @extend .review;
+                }        
+            }
+        }
+    }
+    .courses-btn
+    {
+        width: 200px !important;
+        &:hover
+        {
+            box-shadow: inset 200px 0 0 0 #007bff;
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .course-img img
+    {
+        width: 100%;
+    }
+}
+/* ------------------------- end courses section -------------------------*/
+
+/* ------------------------- start teacher section -------------------------*/
+#teachers
+{
+    background: {
+        image: url(../images/section_bg02.png);
+        size: 100% 100%;
+        position: center center;
+    }
+    padding: 70px 0;
+
+    .special-title
+    {
+        color:white !important;
+    }
+    .special-btn
+    {
+        width: 210px;
+        background-color: white !important;
+        color: black !important;
+        box-shadow: inset 0 0 0 0 black !important;
+        transition: 0.3s;
+
+        &:hover
+        {
+            color: white !important;
+            box-shadow: inset 210px 0 0 0 black !important;
+        }
+    }
+
+    .card
+    {
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+        overflow: hidden;
+        margin-bottom: 18px;
+        .img-card
+        {
+            overflow: hidden;
+            position: relative;
+            .card-img-top
+            {
+                transition: 0.5s;
+                &:hover
+                {
+                    transform: scale(1.1);
+                }
+            }
+        }
+        .card-body
+        {
+            .card-title
+            {
+                color: rgb(51, 56, 78);
+                font: {
+                    size: 25px;
+                    weight: 700;
+                    family: $fontSen;
+                };
+            }
+            .card-text
+            {
+                color: rgb(87, 102, 126);
+                font-family: $fontRoboto;
+            }
+        }
+        &:hover
+        {
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+            .card-img-top
+            {
+                transition: 0.5s;
+                transform: scale(1.1);
+            }
+            .card-title
+            {
+                color: $mainColor;
+            }
+        }
+    }   
+    
+}
+/* ------------------------- end teacher section -------------------------*/
+
+/* ------------------------- start aboutus section -------------------------*/
+#aboutus
+{
+    p
+    {
+        color: rgb(100, 103, 108);
+        font: {
+            size: 16px;
+            family: $fontRoboto;
+        };
+    }
+    .features
+    {
+        margin-bottom: 20px;
+        p
+        {
+            color: black;
+           font-family: $fontRoboto; 
+
+           i
+           {
+               color: $mainColor;
+               font-size: 30px;
+               margin-right: 14px;
+           }
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .aboutus-display
+    {
+        display: none !important;
+    }
+}
+/* ------------------------- end aboutus section -------------------------*/
+
+/* ------------------------- start testimonials section -------------------------*/
+#testimonials
+{
+    background: {
+        image: url(../images/section_bg03.png);
+        size: cover;
+        position: center center;
+    }
+    .testimonial-title
+    {
+        margin-bottom: 0;
+    }
+    .single-testimonial
+    {
+
+        .slick-prev 
+        {
+            left: 100px !important;
+            z-index: 10 !important;
+            opacity: 0.1;
+        }
+        .slick-next {
+            right: 100px !important;
+            z-index: 10 !important;
+            opacity: 0.1;
+        }
+
+
+        .testimonial
+        {
+            cursor: grab;
+            .test-caption
+            {
+                color: white;
+                font: {
+                    size: 23px;
+                    family: $fontRoboto;
+                };
+            }
+            
+        }
+        &:hover
+            {
+                .slick-prev , .slick-next 
+                {
+                    opacity: 1;
+                    transition: 0.3s linear;
+                }
+                .slick-prev
+                {
+                    left: 110px !important;
+                }
+                .slick-next
+                {
+                    right: 110px !important;
+                }
+            }
+        
+    }
+}
+@media screen and (max-width: 767px) {
+    .slick-arrow
+    {
+        display: none !important;
+    }
+    .test-caption 
+    {
+        width: 75% !important;
+    }
+}
+/* ------------------------- end testimonials section -------------------------*/
+
+
+/* ------------------------- start blogs section -------------------------*/
+#blogs
+{
+    .blog
+    {
+        margin-bottom: 15px;
+        .blog-img
+        {
+            overflow: hidden;
+            img
+            {
+                transition: 0.5s;
+                &:hover
+                {
+                    transform: scale(1.1);
+                }
+            }
+            .time
+            {
+                flex-direction: column;
+                width: 100px;
+                height: 90px;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                background-color: $mainColor;
+                color: white;
+                font: {
+                    size: 24px;
+                    weight: 600;
+                    family: $fontRoboto
+                };
+            }
+            .time-span
+            {
+
+                font-size: 16px;
+            }
+        }
+
+        .blog-caption
+        {
+            p
+            {
+                color: #10285d;
+                font: {
+                    size: 16px;
+                    family: $fontRoboto;
+                };
+            }
+            h3
+            {
+                color: #191d34;
+                font: {
+                    size: 24px;
+                    weight: 700;
+                    family: $fontRoboto;
+                };
+                margin-bottom: 18px;
+                &:hover
+                {
+                    color: $mainColor;
+                }
+            }
+            a
+            {
+                color: #3a3a3a;
+                text-decoration: none;
+                text-transform: uppercase;
+                font: {
+                    size: 14px;
+                    family: $fontSen;
+                };
+                &:hover
+                {
+                    color: $mainColor;
+                }
+            }
+        }
+    }
+}
+/* ------------------------- end blogs section -------------------------*/
