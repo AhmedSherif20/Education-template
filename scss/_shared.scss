@@ -83,6 +83,7 @@ body
 .section
 {
     margin-bottom: 100px;
+    overflow: hidden;
 }
 /* ------------------------- Main style of every section titles ------------------------- */
 
@@ -91,6 +92,7 @@ body
 {
     margin-bottom: 48px;
     padding-top: 30px;
+    font-size: 16px;
 }
 .section-span
 {
@@ -106,14 +108,45 @@ body
 {
     color: #030431;
     font: {
-        size: 50px;
+        size: 3em;
         weight: 600;
         family: $fontSen;
     };
     margin: 16px 0 25px;
     line-height: 1.3;
 }
+@media screen and (max-width: 767px) {
 
+  .section-titles
+  {
+    font-size: 14px;
+  }
+  
+}
+@media screen and (max-width: 510px) {
+
+  .section-titles
+  {
+    font-size: 12px;
+  }
+  
+}
+@media screen and (max-width: 439px) {
+
+  .section-titles
+  {
+    font-size: 10px;
+  }
+  
+}
+@media screen and (max-width: 370px) {
+
+  .section-titles
+  {
+    font-size: 8px;
+  }
+  
+}
 
 /* ------------------------- Main titles of every section titles ------------------------- */
 

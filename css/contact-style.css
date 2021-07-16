@@ -79,6 +79,7 @@ body {
 /* ------------------------- Main style of every section titles ------------------------- */
 .section {
   margin-bottom: 100px;
+  overflow: hidden;
 }
 
 /* ------------------------- Main style of every section titles ------------------------- */
@@ -86,6 +87,7 @@ body {
 .section-titles {
   margin-bottom: 48px;
   padding-top: 30px;
+  font-size: 16px;
 }
 
 .section-span {
@@ -97,11 +99,35 @@ body {
 
 .section-title {
   color: #030431;
-  font-size: 50px;
+  font-size: 3em;
   font-weight: 600;
   font-family: "Sen", sans-serif;
   margin: 16px 0 25px;
   line-height: 1.3;
+}
+
+@media screen and (max-width: 767px) {
+  .section-titles {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .section-titles {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 439px) {
+  .section-titles {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .section-titles {
+    font-size: 8px;
+  }
 }
 
 /* ------------------------- Main titles of every section titles ------------------------- */
@@ -379,6 +405,7 @@ body {
 /* ------------------------- Main style of every section titles ------------------------- */
 .section {
   margin-bottom: 100px;
+  overflow: hidden;
 }
 
 /* ------------------------- Main style of every section titles ------------------------- */
@@ -386,6 +413,7 @@ body {
 .section-titles {
   margin-bottom: 48px;
   padding-top: 30px;
+  font-size: 16px;
 }
 
 .section-span {
@@ -397,11 +425,35 @@ body {
 
 .section-title {
   color: #030431;
-  font-size: 50px;
+  font-size: 3em;
   font-weight: 600;
   font-family: "Sen", sans-serif;
   margin: 16px 0 25px;
   line-height: 1.3;
+}
+
+@media screen and (max-width: 767px) {
+  .section-titles {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .section-titles {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 439px) {
+  .section-titles {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .section-titles {
+    font-size: 8px;
+  }
 }
 
 /* ------------------------- Main titles of every section titles ------------------------- */
@@ -510,6 +562,11 @@ footer .footer-up .footer-update .input-group .form-control {
 
 footer .footer-up .footer-update .input-group .input-group-append .footer-btn {
   width: 150px;
+}
+
+footer .footer-up .footer-update .input-group .footer-btn {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 footer .footer-up .footer-media .media-icon {
@@ -657,18 +714,18 @@ footer .footer-copyright p a:hover {
   padding: 50px 0;
 }
 
-#contact .map .gmap_canvas {
+#contact .map {
   overflow: hidden;
-  background: none !important;
+  position: relative;
   height: 500px;
-  width: 1100px;
 }
 
-#contact .map .mapouter {
-  position: relative;
-  text-align: right;
-  height: 500px;
-  width: 1100px;
+#contact .map iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 
 #contact .contact-form h2 {
